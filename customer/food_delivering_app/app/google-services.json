@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "242520242408",
+    "firebase_url": "https://food-delivery-5af66.firebaseio.com",
+    "project_id": "food-delivery-5af66",
+    "storage_bucket": "food-delivery-5af66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242520242408:android:6c939efa6446a3631fb15d",
+        "android_client_info": {
+          "package_name": "com.perfresh.food_delivering_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242520242408-e457mn3i55sqsmevub5cvp17v1gp5kf6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.perfresh.food_delivering_app",
+            "certificate_hash": "047c305407b2c8f1b190650b2eba2cf3e5556fda"
+          }
+        },
+        {
+          "client_id": "242520242408-fag2encoisg7pk5il45ehbbqo3u1ma9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKva8M__YJab8owBnJ0nhPyb9I029qgkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242520242408-fag2encoisg7pk5il45ehbbqo3u1ma9c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

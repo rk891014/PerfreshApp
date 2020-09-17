@@ -1,2 +1,0 @@
-# PerfreshApp
- an ecommerce app

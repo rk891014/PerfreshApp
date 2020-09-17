@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.AppReviewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/apprreviewback"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:tint="#000"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="35dp"
+            android:textColor="#000"
+            android:text="Suggestions"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/truefalse3"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:background="#355C7D"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFFFF"
+                android:text="Customer can suggest any suggestion or if you want to order any item which is not in list. The item will be available as soon as possible. we Perfresh need your love and support 🙏🏻🙏🏻🙏🏻🙏🏻."/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reviewrec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/appreview"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:hint="App Reviews"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/ic_baseline_send_24"
+            android:id="@+id/reviewsubmit"
+            android:text="Submit"
+            android:backgroundTint="#ffffff"
+            android:tint="#000000"
+            android:background="@drawable/ripple_effect"
+            android:layout_gravity="center_vertical"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

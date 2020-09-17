@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AboutUsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#000000"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/aboutreviewback"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:tint="#ffffff"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="35dp"
+                android:textColor="#ffffff"
+                android:text="About Us"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#000000">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/aboutus"/>
+
+                <TextView
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    android:text="About Us"
+                    android:textSize="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="You now have the power to move \nthings"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="Living in the city, we never have enough time to do all the things we want to do.\n\nPerfresh can change the way you move things, how you shop and lets you access your city like never before. We’re an app that connects you to the nearest delivery partner who can make purchases, pick up items from our store or restaurant in the city and bring them to you. \n\n
+
+It’s never easy to make purchases or drop off packages when you get busy with work, get stuck in traffic, or you might even end up forgetting about it completely.\n\n
+
+All you need to do is,
+Tell us where to go, what needs to be done and when.
+What happens next? Sit back, and let us worry about your task-at-hand.
+You could say that we are always on the move for you."
+            android:textSize="16dp"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Perfresh"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="350dp"
+            android:src="@drawable/aboutus2"/>
+
+                <TextView
+                    android:text="Save the excuses\n and time."
+                    android:textSize="28dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        <TextView
+            android:text="The better way to get\n things done,"
+            android:textSize="28dp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="just order on Perfresh!"
+            android:textSize="28dp"
+            android:textColor="#03fda6"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/appicon"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

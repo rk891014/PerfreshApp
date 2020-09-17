@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:layout_margin="3dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="top"
+            android:id="@+id/rimageView"
+            android:src="@color/colorAccent"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/productname"
+                android:text="productname"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center|left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/productprice"
+                android:textColor="#000"
+                android:layout_marginLeft="3dp"
+                android:text="productprice"
+                android:textSize="14dp"
+                android:layout_gravity="center|left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/productquantity"
+                android:textColor="#000"
+                android:layout_marginLeft="3dp"
+                android:text="productquantity"
+                android:textSize="14dp"
+                android:layout_gravity="center|left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+8            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_marginTop="7dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                app:cardBackgroundColor="#34D817"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/rating1"
+                        android:text="5.0"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:src="@drawable/ic_baseline_star_24"
+                        android:tint="#ffffff"
+                        android:layout_width="17dp"
+                        android:layout_gravity="bottom"
+                        android:layout_height="17dp"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <ImageView
+                android:tint="#FF0000"
+                android:id="@+id/delete2"
+                android:layout_marginLeft="20dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_baseline_delete_24"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|right"
+            android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/available"
+            android:gravity="center"
+            android:background="@drawable/ripple_effect"
+            android:text="Available"
+            android:textSize="14dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_width="80dp"
+            android:layout_height="30dp" />
+
+
+            <TextView
+                android:id="@+id/productreviews"
+                android:text="@string/your_string"
+                android:textSize="13dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:gravity="bottom"
+                android:layout_marginTop="28dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/newprice"
+            android:hint="new price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/updateprice"
+            android:text="update price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/cuttedprice"
+                android:hint="new cutted price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/updatecuttedprice"
+                android:text="update cutted price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/discount"
+                android:hint="new discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/updatediscount"
+                android:text="update discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/categoryname"
+                android:hint="new name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/updatecategoryname"
+                android:text="where to go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

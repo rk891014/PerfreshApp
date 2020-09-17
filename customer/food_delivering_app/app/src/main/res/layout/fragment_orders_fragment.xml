@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.orders_fragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:layout_margin="15dp"
+      android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bback"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:tint="#000"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="35dp"
+        android:textColor="#000"
+        android:gravity="center_vertical"
+        android:text="Orders"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ordercompleted"
+        android:layout_width="79dp"
+        android:layout_height="30dp"
+        android:textSize="11dp"
+        android:text="Order Completed"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/ripple_effect"
+        android:layout_gravity="right|center"
+        android:gravity="center"/>
+
+  </LinearLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/cartrec"
+      android:layout_width="match_parent"
+      android:overScrollMode="never"
+      android:layout_height="wrap_content">
+
+  </androidx.recyclerview.widget.RecyclerView>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+  <ImageView
+      android:id="@+id/emptycart"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_gravity="center"
+      android:tint="@color/colorAccent"
+      android:gravity="center"
+      android:textColor="#000"/>
+
+  <TextView
+      android:id="@+id/empty"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:textSize="18dp"
+      android:gravity="center"
+      android:textColor="#000" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/paymentdetail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+  <androidx.cardview.widget.CardView
+
+      android:layout_width="match_parent"
+      app:cardBackgroundColor="#F0FBFF"
+      android:layout_height="wrap_content">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="7dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+      android:textColor="#000"
+      android:textSize="18dp"
+      android:text="Payment Detail"/>
+      <TextView
+          android:id="@+id/savedrs"
+          android:background="@drawable/red_circle2"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:textStyle="bold"
+          android:textColor="#ffffff"
+          android:textSize="16dp"
+          android:layout_width="90dp"
+          android:layout_height="wrap_content"
+          android:text="Saved \n ₹10"/>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="#000000"
+          android:orientation="horizontal">
+        <TextView
+            android:id="@+id/totalcoins"
+            android:text="500"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="3dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/coins"/>
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:layout_marginLeft="50dp"
+          android:textSize="16dp"
+          android:layout_weight="1"
+          android:text="Item total"/>
+
+      <TextView
+          android:id="@+id/cuttedpricee"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="7dp"
+          android:textColor="#000"
+          android:layout_marginRight="5dp"
+          android:textSize="16dp"
+          android:text="35"/>
+
+      <TextView
+          android:id="@+id/itemtotal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="7dp"
+          android:textColor="#000"
+          android:textStyle="bold"
+          android:layout_marginRight="5dp"
+          android:textSize="16dp"
+          android:text="35"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:layout_marginLeft="50dp"
+          android:textSize="16dp"
+          android:layout_weight="1"
+          android:text="Coins Discount"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="7dp"
+          android:layout_marginBottom="7dp"
+          android:textColor="@color/green"
+          android:textSize="16dp"
+          android:text="- ₹"/>
+      <TextView
+          android:id="@+id/coindiscount"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="7dp"
+          android:textColor="@color/green"
+          android:layout_marginBottom="7dp"
+          android:layout_marginRight="5dp"
+          android:textSize="16dp"
+          android:text="0"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:layout_marginLeft="50dp"
+          android:textSize="16dp"
+          android:layout_weight="1"
+          android:text="Delivery Charges"/>
+      <TextView
+          android:id="@+id/deliverycharges"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="7dp"
+          android:textColor="#FF0000"
+          android:layout_marginRight="5dp"
+          android:textSize="16dp"
+          android:text="35"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:layout_marginLeft="50dp"
+          android:textSize="16dp"
+          android:layout_weight="1"
+          android:text="Welcome discount"/>
+      <TextView
+          android:id="@+id/firstdiscount"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="7dp"
+          android:textColor="@color/green"
+          android:layout_marginRight="5dp"
+          android:textSize="16dp"
+          android:text="25%"/>
+
+      <TextView
+          android:id="@+id/firstdiscountrupees"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="7dp"
+          android:textColor="@color/green"
+          android:layout_marginRight="5dp"
+          android:textSize="16dp"
+          android:text="25%"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:layout_marginLeft="50dp"
+          android:textSize="16dp"
+          android:layout_weight="1"
+          android:text="Amount Payable"/>
+      <TextView
+          android:id="@+id/cuttedtopay"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="7dp"
+          android:textColor="#000"
+          android:layout_marginRight="5dp"
+          android:textSize="16dp"
+          android:text="35"/>
+      <TextView
+          android:id="@+id/topay"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="7dp"
+          android:textColor="#000"
+          android:textStyle="bold"
+          android:layout_marginRight="5dp"
+          android:textSize="16dp"
+          android:text="35"/>
+      <TextView
+          android:id="@+id/firsttopay"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="7dp"
+          android:textColor="#000"
+          android:textStyle="bold"
+          android:layout_marginRight="5dp"
+          android:textSize="16dp"
+          android:text="0"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black" />
+    <LinearLayout
+        android:gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/truefalse"
+          android:visibility="invisible"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/getcoinsdiscount"
+        android:background="@drawable/ripple_effect"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:textSize="13dp"
+        android:layout_gravity="right"
+        android:text="Get Coins Discount"
+        />
+      <Button
+          android:id="@+id/ordernow"
+          android:background="@drawable/ripple_effect"
+          android:layout_width="100dp"
+          android:layout_height="40dp"
+          android:layout_margin="10dp"
+          android:textSize="13dp"
+          android:layout_gravity="right"
+          android:text="Order Now"
+          />
+    </LinearLayout>
+  </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+  <androidx.cardview.widget.CardView
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      app:cardCornerRadius="5dp"
+      app:cardBackgroundColor="#F0FBFF"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+      <TextView
+          android:id="@+id/tenrsless"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textStyle="bold"
+          android:gravity="center"
+          android:textColor="@color/colorPrimary"
+          android:layout_marginBottom="10dp"
+          android:text=""/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textStyle="bold"
+          android:gravity="center"
+          android:textColor="#000000"
+          android:text="Get Extra Savings + Priority Delivery\n+ Free Delivery"/>
+
+      <TextView
+          android:id="@+id/afterfreedel"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textStyle="bold"
+          android:textSize="22dp"
+          android:textColor="@color/green"
+          android:text="₹499"/>
+
+      <TextView
+          android:layout_marginTop="10dp"
+          android:id="@+id/coinsearned"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textStyle="bold"
+          android:gravity="center"
+          android:textSize="16dp"
+          android:textColor="@color/colorPrimary"
+          android:text="You will Earn 0 coins from this order"/>
+      <TextView
+          android:id="@+id/orderbeyond"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textStyle="bold"
+          android:textSize="16dp"
+          android:gravity="center"
+          android:textColor="#FF0000"
+          android:text="Order beyond 50 will give you 500 coins and more"/>
+
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+  </LinearLayout>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
